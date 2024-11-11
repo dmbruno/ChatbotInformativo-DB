@@ -9,9 +9,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
 const PORT = process.env.PORT;
-
 
 //funcion para leer archivos
 async function leerArchivo(ruta) {
@@ -20,13 +18,10 @@ async function leerArchivo(ruta) {
         const contenido = await fs.readFile(rutaAbsoluta, 'utf-8');
         return contenido;
     } catch (error) {
-        console.error(`Error leyendo el archivo ${ruta}:`, error);
-        return 'No se pudo cargar el contenido.';
+        console.error(`⚠️ Error leyendo el archivo ${ruta}:`, error);
+        return '❌ No se pudo cargar el contenido.';
     }
 }
-
-
-
 
 // Función para manejar la selección del usuario
 async function manejarSeleccion(ctx, ctxFn, seleccion) {
@@ -43,23 +38,23 @@ async function manejarSeleccion(ctx, ctxFn, seleccion) {
     const rutaArchivo = rutas[seleccion];
     if (rutaArchivo) {
         const contenido = await leerArchivo(rutaArchivo);
-        await ctxFn.flowDynamic(contenido);
+        await ctxFn.flowDynamic(`📄 ${contenido}`);
     } else {
-        await ctxFn.flowDynamic("Opción no reconocida. Por favor, selecciona una opción válida.");
+        await ctxFn.flowDynamic("🚫 Opción no reconocida. Por favor, selecciona una opción válida.");
     }
 }
 
 const initialWelcomeFlow = addKeyword(['EVENT.WELCOME']).addAnswer(
-    `🙌 ¡Bienvenido a mi *ChatBot* interactivo! Selecciona una de las opciones para continuar:`,
+    `🙌 ¡Bienvenido a mi *ChatBot* interactivo! 🌐 Selecciona una de las opciones para continuar:`,
     {
         buttons: [
-            { body: 'Probar Bot' },
-            { body: 'Contacto' }
+            { body: '✨ Probar Bot' },
+            { body: '📞 Contacto' }
         ]
     },
     async (ctx, { provider }) => {
         if (ctx.body.toLowerCase() === 'probar bot') {
-            await ctx.reply('Has seleccionado *Probar Bot*. Aquí tienes las opciones disponibles:');
+            await ctx.reply('👍 Has seleccionado *Probar Bot*. Aquí tienes las opciones disponibles:');
             await ctx.startFlow('welcomeFlow'); // Llama al flujo de opciones principales
         } else if (ctx.body.toLowerCase() === 'contacto') {
             await manejarSeleccion(ctx, ctx, 'contact');
@@ -69,26 +64,26 @@ const initialWelcomeFlow = addKeyword(['EVENT.WELCOME']).addAnswer(
 
 // Flujo de Bienvenida
 const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot', 'chatbot', 'volver']).addAnswer(
-    `🙌 *Explora las opciones que los bots tienen disponibles para vos y tu negocio*`,
+    `🚀 *Explora las opciones que los bots tienen disponibles para vos y tu negocio!*`,
     null,
     async (ctx, { provider }) => {
-        console.log("Mensaje recibido:", ctx.body); // Muestra el mensaje recibido
+        console.log("📩 Mensaje recibido:", ctx.body); // Muestra el mensaje recibido
         const list = {
             "header": {
                 "type": "text",
-                "text": "Explora las opciones disponibles"
+                "text": "🌐 Explora las opciones disponibles"
             },
             "body": {
-                "text": "Selecciona una opción para conocer más sobre las capacidades de los bots:",
+                "text": "📌 Selecciona una opción para conocer más sobre las capacidades de los bots:",
             },
             "footer": {
-                "text": "Elige una opción para comenzar",
+                "text": "👇 Elige una opción para comenzar",
             },
             "action": {
-                "button": "Opciones",
+                "button": "📋 Opciones",
                 "sections": [
                     {
-                        "title": "Menú Principal",
+                        "title": "📂 Menú Principal",
                         "rows": [
                             {
                                 "id": "info",
@@ -103,7 +98,7 @@ const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot', 'chatbot', 'volve
                             {
                                 "id": "ejemplos",
                                 "title": "🏆 Ejemplos",
-                                "description": "Conoce algunos ejemplos de exito"
+                                "description": "Conoce algunos ejemplos de éxito"
                             },
                             {
                                 "id": "funcionalidades",
@@ -133,19 +128,19 @@ const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot', 'chatbot', 'volve
 
         try {
             await provider.sendList(ctx.from, list);
-            console.log("Lista enviada exitosamente");  // Línea de depuración
+            console.log("✅ Lista enviada exitosamente");  // Línea de depuración
         } catch (error) {
-            console.error("Error al enviar la lista:", error);  // Línea de depuración para capturar errores
+            console.error("⚠️ Error al enviar la lista:", error);  // Línea de depuración para capturar errores
         }
     }
 );
 
 // Flujo de Despedida para "salir" o "cancelar"
 const farewellFlow = addKeyword(['salir', 'cancelar']).addAnswer(
-    `👋 ¡Gracias por usar el *ChatBot!* Si tienes alguna otra consulta o necesitas ayuda en el futuro, no dudes en volver. ¡Te esperamos! 😊`,
+    `👋 ¡Gracias por usar el *ChatBot*! 😊 Si tienes alguna otra consulta o necesitas ayuda en el futuro, no dudes en volver. ¡Te esperamos! 🌟`,
     null,
     (ctx) => {
-        console.log("Usuario ha salido de la conversación");
+        console.log("🔚 Usuario ha salido de la conversación");
     }
 );
 
@@ -206,7 +201,7 @@ const main = async () => {
         database: adapterDB,
     });
 
-    console.log("Servidor corriendo en el puerto", PORT);
+    console.log("🌐 Servidor corriendo en el puerto", PORT);
     httpServer(+PORT);
 };
 
