@@ -1,3 +1,16 @@
+💬 *Preguntas Frecuentes*
 
+*1️⃣ ¿Un bot reemplaza al personal de atención?*  
+No, es ideal para tareas repetitivas, pero el personal es esencial para consultas complejas.
 
-esto es preguntas
+*2️⃣ ¿Puede un bot integrarse con otros sistemas?*  
+Sí, los bots pueden conectarse a CRMs, reservas y marketing para una experiencia fluida.
+
+*3️⃣ ¿Requiere conocimientos técnicos para gestionarlo?*  
+No, el bot es autónomo una vez configurado. Si necesitas ajustes, podemos ayudarte.
+
+*4️⃣ ¿Es seguro manejar datos de clientes con un bot?*  
+Sí, los bots son seguros cuando se configuran correctamente y cumplen con las normas de privacidad.
+
+*5️⃣ ¿Cuánto tiempo toma implementar un bot?*  
+Depende de la complejidad, pero un bot básico puede estar listo en pocos días.
