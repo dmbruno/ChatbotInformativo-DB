@@ -124,12 +124,7 @@ const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot','menú','Menú','m
                                 "id": "uso",
                                 "title": "🧰 Casos de uso",
                                 "description": "Te muestro algunos casos de uso"
-                            },
-                            {
-                                "id": "preguntas",
-                                "title": "❓FAQs",
-                                "description": "Preguntas Frecuentes"
-                            },
+                            }
                         ]
                     }
                 ]

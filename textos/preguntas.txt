@@ -15,12 +15,6 @@ Sí, los bots están diseñados para ser seguros. Es fundamental configurarlos c
 *5️⃣ ¿Cuánto tiempo toma implementar un bot en mi negocio?*  
 Depende de las funcionalidades requeridas, pero en general, un bot básico puede estar listo en pocos días. Personalizaciones avanzadas pueden requerir más tiempo.
 
-*6️⃣ ¿Puede un bot crecer con mi negocio?*  
-Absolutamente. Los bots son escalables y se pueden ajustar o expandir para adaptarse a las necesidades de tu negocio a medida que crece.
-
-*7️⃣ ¿Cuáles son los costos de tener un bot?*  
-Los costos varían según la complejidad y las funciones deseadas. Te ofrecemos opciones flexibles para adaptarse a distintos presupuestos.
-
 
 Si tienes más preguntas, ¡no dudes en contactarnos!
 
