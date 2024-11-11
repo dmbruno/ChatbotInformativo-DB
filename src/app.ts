@@ -132,6 +132,7 @@ const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot','menú','Menú','m
 
 // Flujo de Despedida para "salir" o "cancelar"
 // Flujo de Despedida para "salir" o "cancelar"
+// Flujo de Despedida para "salir" o "cancelar"
 const farewellFlow = addKeyword(['salir', 'cancelar']).addAnswer(
     `👋 ¡Gracias por usar el *ChatBot*! 😊 Si tienes alguna otra consulta o necesitas ayuda en el futuro, no dudes en volver. ¡Te esperamos! 🌟\n\n✍️ *¿Te gustaría dejar una opinión, consulta o sugerencia?*`,
     {
@@ -143,8 +144,9 @@ const farewellFlow = addKeyword(['salir', 'cancelar']).addAnswer(
     async (ctx) => {
         if (ctx.body.toLowerCase() === 'sí, quiero opinar') {
             await ctx.reply('📝 ¡Genial! Cuéntame lo que piensas, cualquier sugerencia o pregunta será bien recibida.');
-        } else {
-            console.log("🔚 Usuario ha salido de la conversación sin dejar opinión.");
+        } else if (ctx.body.toLowerCase() === 'no, gracias') {
+            await ctx.reply('👌 ¡Perfecto! Gracias nuevamente por tu tiempo. ¡Que tengas un excelente día! 🌞');
+            console.log("🔚 Usuario ha decidido no dejar opinión y ha finalizado la conversación.");
         }
     }
 );
