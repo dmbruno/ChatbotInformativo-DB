@@ -16,7 +16,7 @@ const PORT = process.env.PORT;
 //funcion para leer archivos
 async function leerArchivo(ruta) {
     try {
-        const rutaAbsoluta = path.join(__dirname, 'src', 'textos', ruta);  // Construye la ruta absoluta
+        const rutaAbsoluta = path.join(__dirname, 'textos', ruta);  // Apunta a la carpeta 'textos' en la raíz
         const contenido = await fs.readFile(rutaAbsoluta, 'utf-8');
         return contenido;
     } catch (error) {
