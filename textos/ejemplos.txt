@@ -12,5 +12,9 @@
 
 *Estos negocios han logrado resultados increíbles. ¡El próximo éxito puede ser el tuyo!*
 
-🤖 ¡Para volver al menu de opciones escribe *Menu*!
-🏁 Para salir del bot en cualquier momento, escribe "salir".
+---
+
+🔄 *Opciones rápidas:*
+📋 *Menú principal:* escribe *Menu*
+📞 *Solicitar contacto:* escribe *Contacto*
+🏁 *Salir del bot:* escribe *Salir*
