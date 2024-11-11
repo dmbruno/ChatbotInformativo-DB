@@ -8,7 +8,7 @@
     "start": "node ./dist/app.js",
     "lint": "eslint . --no-ignore",
     "dev": "npm run lint && nodemon ./src/app.ts --env-file=.env",
-    "build": "npx rollup -c"
+    "build": "npx rollup -c && cp -r textos dist/"
   },
   "keywords": [],
   "dependencies": {
