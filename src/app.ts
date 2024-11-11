@@ -44,7 +44,7 @@ async function manejarSeleccion(ctx, ctxFn, seleccion) {
     }
 }
 
-const initialWelcomeFlow = addKeyword(['EVENT.WELCOME']).addAnswer(
+const initialWelcomeFlow = addKeyword(['EVENT.WELCOME','volver']).addAnswer(
     `🙌 ¡Bienvenido a mi *ChatBot* interactivo! 🌐 Selecciona una de las opciones para continuar:`,
     {
         buttons: [
@@ -63,7 +63,7 @@ const initialWelcomeFlow = addKeyword(['EVENT.WELCOME']).addAnswer(
 );
 
 // Flujo de Bienvenida
-const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot', 'chatbot', 'volver']).addAnswer(
+const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot']).addAnswer(
     `🚀 *Explora las opciones que los bots tienen disponibles para vos y tu negocio!*`,
     null,
     async (ctx, { provider }) => {
