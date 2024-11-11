@@ -11,10 +11,3 @@
 🚀 *Impulsa las Ventas:* Guía a los clientes en su compra, cierra ventas y aumenta conversiones.
 
 📈 *¡Lleva tu negocio al siguiente nivel con un bot!*
-
----
-
-🔄 *Opciones rápidas:*
-📋 *Menú principal:* escribe *Menu*
-📞 *Solicitar contacto:* escribe *Contacto*
-🏁 *Salir del bot:* escribe *Salir*

@@ -12,9 +12,3 @@
 
 Estas funcionalidades harán que tu negocio sea más eficiente y atractivo para los clientes.
 
----
-
-🔄 *Opciones rápidas:*
-📋 *Menú principal:* escribe *Menu*
-📞 *Solicitar contacto:* escribe *Contacto*
-🏁 *Salir del bot:* escribe *Salir*

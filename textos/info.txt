@@ -11,9 +11,3 @@
 
 Explora las opciones disponibles para conocer cómo un bot puede potenciar tu negocio. ¡Estamos aquí para ayudarte!
 
----
-
-🔄 *Opciones rápidas:*
-📋 *Menú principal:* escribe *Menu*
-📞 *Solicitar contacto:* escribe *Contacto*
-🏁 *Salir del bot:* escribe *Salir*

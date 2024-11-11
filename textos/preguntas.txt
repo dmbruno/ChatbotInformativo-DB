@@ -25,9 +25,3 @@ Los costos varían según la complejidad y las funciones deseadas. Te ofrecemos 
 
 Si tienes más preguntas, ¡no dudes en contactarnos!
 
----
-
-🔄 *Opciones rápidas:*
-📋 *Menú principal:* escribe *Menu*
-📞 *Solicitar contacto:* escribe *Contacto*
-🏁 *Salir del bot:* escribe *Salir*

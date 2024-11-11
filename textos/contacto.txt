@@ -13,6 +13,3 @@ Si estás interesado en un *presupuesto* para desarrollar un bot que se adapte a
 *dmbruno61@gmail.com*
 
 Envíame un correo con cualquier consulta, ¡tus preguntas son bienvenidas! 😊
-
-📋 *Menú principal:* escribe *Menu*
-🏁 Para salir del bot en cualquier momento, escribe salir.

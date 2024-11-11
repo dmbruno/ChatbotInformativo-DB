@@ -12,9 +12,3 @@
 
 *Estos negocios han logrado resultados increíbles. ¡El próximo éxito puede ser el tuyo!*
 
----
-
-🔄 *Opciones rápidas:*
-📋 *Menú principal:* escribe *Menu*
-📞 *Solicitar contacto:* escribe *Contacto*
-🏁 *Salir del bot:* escribe *Salir*
