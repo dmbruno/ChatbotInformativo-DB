@@ -6,6 +6,8 @@ import fs from 'fs/promises';
 
 const PORT = process.env.PORT;
 
+
+
 // Función para leer archivos .txt
 async function leerArchivo(ruta) {
     try {
@@ -194,6 +196,7 @@ const main = async () => {
         provider: adapterProvider,
         database: adapterDB,
     });
+    
     console.log("Servidor corriendo en el puerto", PORT); 
     httpServer(+PORT);
 };
