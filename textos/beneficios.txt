@@ -12,4 +12,4 @@
 
 *¡Lleva tu negocio al siguiente nivel con un bot!*
 
-🤖 ¡Para volver al menu escribe *volver*!
+🤖 ¡Para volver al menu de opciones escribe *Menu*!

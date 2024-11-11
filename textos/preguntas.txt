@@ -25,4 +25,4 @@ Los costos varían según la complejidad y las funciones deseadas. Te ofrecemos 
 
 Si tienes más preguntas, ¡no dudes en contactarnos!
 
-🤖 ¡Para volver al menu escribe *volver*!
+🤖 ¡Para volver al menu de opciones escribe *Menu*!

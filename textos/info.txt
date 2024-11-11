@@ -11,4 +11,4 @@
 
 Explora las opciones disponibles para conocer cómo un bot puede potenciar tu negocio. ¡Estamos aquí para ayudarte!
 
-🤖 ¡Para volver al menu escribe *volver*!
+🤖 ¡Para volver al menu de opciones escribe *Menu*!

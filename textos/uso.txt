@@ -14,4 +14,4 @@ Un bot puede ser una herramienta poderosa en distintos escenarios. Aquí algunos
 
 Estos son solo algunos ejemplos. ¡Un bot es *versátil* y se adapta a las necesidades de cualquier negocio!
 
-🤖 ¡Para volver al menu escribe *volver*!
+🤖 ¡Para volver al menu de opciones escribe *Menu*!

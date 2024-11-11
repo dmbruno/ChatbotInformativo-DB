@@ -12,4 +12,4 @@
 
 Estas funcionalidades harán que tu negocio sea más eficiente y atractivo para los clientes.
 
-🤖 ¡Para volver al menu escribe *volver*!
+🤖 ¡¡Para volver al menu de opciones escribe *Menu*!

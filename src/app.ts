@@ -63,7 +63,7 @@ const initialWelcomeFlow = addKeyword(['EVENT.WELCOME','volver']).addAnswer(
 );
 
 // Flujo de Bienvenida
-const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot']).addAnswer(
+const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot','menú','Menú','menu','Menu']).addAnswer(
     `🚀 *Explora las opciones que los bots tienen disponibles para vos y tu negocio!*`,
     null,
     async (ctx, { provider }) => {
@@ -114,11 +114,6 @@ const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot']).addAnswer(
                                 "id": "preguntas",
                                 "title": "❓FAQs",
                                 "description": "Preguntas Frecuentes"
-                            },
-                            {
-                                "id": "contact",
-                                "title": "📞 Contacto",
-                                "description": "Ponete en contacto conmigo"
                             },
                         ]
                     }
