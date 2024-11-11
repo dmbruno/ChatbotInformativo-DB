@@ -3,15 +3,17 @@ import { MetaProvider as Provider } from '@builderbot/provider-meta';
 import { MemoryDB as Database } from '@builderbot/bot';
 import 'dotenv/config';
 import fs from 'fs/promises';
+import path from 'path';
+
 
 const PORT = process.env.PORT;
 
 
-
-// Función para leer archivos .txt
+//funcion para leer archivos
 async function leerArchivo(ruta) {
     try {
-        const contenido = await fs.readFile(ruta, 'utf-8');
+        const rutaAbsoluta = path.join(__dirname, 'src', 'textos', ruta);  // Construye la ruta absoluta
+        const contenido = await fs.readFile(rutaAbsoluta, 'utf-8');
         return contenido;
     } catch (error) {
         console.error(`Error leyendo el archivo ${ruta}:`, error);
@@ -19,16 +21,19 @@ async function leerArchivo(ruta) {
     }
 }
 
+
+
+
 // Función para manejar la selección del usuario
 async function manejarSeleccion(ctx, ctxFn, seleccion) {
     const rutas = {
-        "info": './src/textos/info.txt',
-        "uso": './src/textos/uso.txt',
-        "funcionalidades": './src/textos/funcionalidades.txt',
-        "beneficios": './src/textos/beneficios.txt',
-        "ejemplos": './src/textos/ejemplos.txt',
-        "contact": './src/textos/contacto.txt',
-        "preguntas": './src/textos/preguntas.txt'
+        "info": 'info.txt',
+        "uso": 'uso.txt',
+        "funcionalidades": 'funcionalidades.txt',
+        "beneficios": 'beneficios.txt',
+        "ejemplos": 'ejemplos.txt',
+        "contact": 'contacto.txt',
+        "preguntas": 'preguntas.txt'
     };
 
     const rutaArchivo = rutas[seleccion];
@@ -59,7 +64,7 @@ const initialWelcomeFlow = addKeyword(['EVENT.WELCOME']).addAnswer(
 );
 
 // Flujo de Bienvenida
-const welcomeFlow = addKeyword(['probar bot','probar', 'bot','chatbot','volver']).addAnswer(
+const welcomeFlow = addKeyword(['probar bot', 'probar', 'bot', 'chatbot', 'volver']).addAnswer(
     `🙌 *Explora las opciones que los bots tienen disponibles para vos y tu negocio*`,
     null,
     async (ctx, { provider }) => {
@@ -196,8 +201,8 @@ const main = async () => {
         provider: adapterProvider,
         database: adapterDB,
     });
-    
-    console.log("Servidor corriendo en el puerto", PORT); 
+
+    console.log("Servidor corriendo en el puerto", PORT);
     httpServer(+PORT);
 };
 
