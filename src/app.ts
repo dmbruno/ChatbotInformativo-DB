@@ -4,7 +4,7 @@ import { MemoryDB as Database } from '@builderbot/bot';
 import 'dotenv/config';
 import fs from 'fs/promises';
 
-const PORT = process.env.PORT ?? 3009;
+const PORT = process.env.PORT;
 
 // Función para leer archivos .txt
 async function leerArchivo(ruta) {
