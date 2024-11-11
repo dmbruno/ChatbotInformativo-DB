@@ -13,3 +13,4 @@
 *¡Lleva tu negocio al siguiente nivel con un bot!*
 
 🤖 ¡Para volver al menu de opciones escribe *Menu*!
+🏁 Para salir del bot en cualquier momento, escribe "salir".
