@@ -24,6 +24,7 @@ async function leerArchivo(ruta) {
 }
 
 // Función para manejar la selección del usuario
+// Función para manejar la selección del usuario
 async function manejarSeleccion(ctx, ctxFn, seleccion) {
     const rutas = {
         "info": 'info.txt',
@@ -38,7 +39,13 @@ async function manejarSeleccion(ctx, ctxFn, seleccion) {
     const rutaArchivo = rutas[seleccion];
     if (rutaArchivo) {
         const contenido = await leerArchivo(rutaArchivo);
-        await ctxFn.flowDynamic(`📄 ${contenido}`);
+        await ctxFn.flowDynamic(`📄 ${contenido}`, {
+            buttons: [
+                { body: '📋 Menú' },
+                { body: '📞 Contacto' },
+                { body: '🏁 Salir' }
+            ]
+        });
     } else {
         await ctxFn.flowDynamic("🚫 Opción no reconocida. Por favor, selecciona una opción válida.");
     }
