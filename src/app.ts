@@ -24,8 +24,6 @@ async function leerArchivo(ruta) {
 }
 
 // Función para manejar la selección del usuario
-// Función para manejar la selección del usuario
-// Función para manejar la selección del usuario
 async function manejarSeleccion(ctx, ctxFn, seleccion) {
     const rutas = {
         "info": 'info.txt',
@@ -40,20 +38,7 @@ async function manejarSeleccion(ctx, ctxFn, seleccion) {
     const rutaArchivo = rutas[seleccion];
     if (rutaArchivo) {
         const contenido = await leerArchivo(rutaArchivo);
-        
-        // Determina los botones según la opción seleccionada
-        const buttons = [
-            { body: '📋 Menú' },
-            { body: '🏁 Salir' }
-        ];
-
-        // Agrega el botón "Contacto" solo si la opción seleccionada no es "contacto"
-        if (seleccion !== 'contact') {
-            buttons.splice(1, 0, { body: '📞 Contacto' }); // Inserta "Contacto" entre "Menú" y "Salir"
-        }
-
-        // Envia el contenido con los botones correspondientes
-        await ctxFn.flowDynamic(`📄 ${contenido}`, { buttons });
+        await ctxFn.flowDynamic(`📄 ${contenido}`);
     } else {
         await ctxFn.flowDynamic("🚫 Opción no reconocida. Por favor, selecciona una opción válida.");
     }
