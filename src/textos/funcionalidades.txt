@@ -1,0 +1,15 @@
+⚙️ *Funcionalidades del Bot* ⚙️
+
+🤖 *Automatización de Respuestas:* Responde consultas frecuentes al instante, mejorando la experiencia del cliente.
+
+📅 *Gestión de Citas:* Agenda, confirma y envía recordatorios automáticos para citas o reservas.
+
+🛒 *Soporte en Ventas:* Facilita recomendaciones de productos, cotizaciones y ayuda a cerrar ventas.
+
+📦 *Seguimiento de Pedidos:* Informa el estado de envío y entrega en tiempo real.
+
+💬 *Atención al Cliente 24/7:* Disponible en cualquier momento para resolver dudas y ayudar a tus clientes.
+
+Estas funcionalidades harán que tu negocio sea más eficiente y atractivo para los clientes.
+
+🤖 ¡Para volver al menu escribe *volver*!

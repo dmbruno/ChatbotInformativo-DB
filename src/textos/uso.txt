@@ -1,0 +1,17 @@
+📚 *Casos de Uso del Bot*
+
+Un bot puede ser una herramienta poderosa en distintos escenarios. Aquí algunos ejemplos de cómo puede aplicarse:
+
+1️⃣ *Atención al Cliente*: Responde consultas frecuentes y ofrece soporte las 24 horas, mejorando la satisfacción del cliente.
+
+2️⃣ *Generación de Leads*: Recoge información de posibles clientes y los califica para ayudar a tu equipo de ventas.
+
+3️⃣ *Gestión de Reservas*: Facilita la reserva de citas, turnos o servicios, evitando llamadas y optimizando la organización.
+
+4️⃣ *Promociones y Marketing*: Envía mensajes personalizados sobre ofertas y novedades directamente a los clientes.
+
+5️⃣ *Seguimiento de Pedidos*: Informa a los clientes sobre el estado de sus pedidos en tiempo real.
+
+Estos son solo algunos ejemplos. ¡Un bot es *versátil* y se adapta a las necesidades de cualquier negocio!
+
+🤖 ¡Para volver al menu escribe *volver*!

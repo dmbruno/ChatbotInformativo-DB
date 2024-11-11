@@ -1,0 +1,28 @@
+💬 *Preguntas Frecuentes*
+
+*1️⃣ ¿Un bot reemplaza totalmente al personal de atención al cliente?*  
+No, un bot es ideal para tareas repetitivas y respuestas automáticas. Sin embargo, el personal es clave para manejar consultas complejas o personalizadas. El bot ayuda a reducir la carga, permitiendo que el equipo se enfoque en lo importante.
+
+*2️⃣ ¿Puede un bot integrarse con otros sistemas?* 
+¡Sí! Los bots pueden conectarse a CRMs, sistemas de reservas, plataformas de marketing y más, permitiendo una experiencia fluida y automatizada.
+
+*3️⃣ ¿Necesito conocimientos técnicos para gestionar el bot?*
+No es necesario. Una vez configurado, el bot funcionará de manera autónoma. Si necesitas ajustes, podemos ayudarte o puedes aprender fácilmente a hacer modificaciones básicas.
+
+*4️⃣ ¿Es seguro utilizar un bot para manejar datos de clientes?*  
+Sí, los bots están diseñados para ser seguros. Es fundamental configurarlos correctamente y cumplir con las normativas de privacidad, como la protección de datos de los clientes.
+
+*5️⃣ ¿Cuánto tiempo toma implementar un bot en mi negocio?*  
+Depende de las funcionalidades requeridas, pero en general, un bot básico puede estar listo en pocos días. Personalizaciones avanzadas pueden requerir más tiempo.
+
+*6️⃣ ¿Puede un bot crecer con mi negocio?*  
+Absolutamente. Los bots son escalables y se pueden ajustar o expandir para adaptarse a las necesidades de tu negocio a medida que crece.
+
+*7️⃣ ¿Cuáles son los costos de tener un bot?*  
+Los costos varían según la complejidad y las funciones deseadas. Te ofrecemos opciones flexibles para adaptarse a distintos presupuestos.
+
+---
+
+Si tienes más preguntas, ¡no dudes en contactarnos!
+
+🤖 ¡Para volver al menu escribe *volver*!
